@@ -1,3 +1,4 @@
+
 import plotly.express as px
 import pandas as pd
 import numpy as np
@@ -50,4 +51,4 @@ fig.update_traces(
     )
 )
 
-pio.write_html(fig, file='/Users/shailynnegron/Desktop/3d_star_plot.html', auto_open=True)
+pio.write_html(fig, file='/Users/shailynnegron/Desktop/seniorcapstone/3d_star_plot.html', auto_open=True)
