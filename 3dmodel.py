@@ -20,7 +20,7 @@ data['temperature_bin'] = pd.cut(data['teff_gspphot'], bins=bins, labels=labels,
 
 df = data[['x', 'y', 'z', 'temperature_bin', 'teff_gspphot']].copy()
 df['bin_numeric'] = df['temperature_bin'].cat.codes
-df_sample = df.sample(frac=0.01)
+df_sample = df.sample(frac=0.001)
                       
 fig = px.scatter_3d(
     df_sample,
